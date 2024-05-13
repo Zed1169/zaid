@@ -77,7 +77,7 @@ class TaskController extends GetxController {
   onAdd(Task task) {
     if (addFormKey.currentState!.validate()) {
       createTask(task);
-    Get.off(SchuldePage(userEmail: task.descrition));
+    Get.off(SchuldePage(userEmail: task.userEmail));
       Get.snackbar(
         "Success",
         "Added successfully",
