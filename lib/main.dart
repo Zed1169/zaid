@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Getpp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'TechBot',
       theme: ThemeData(
