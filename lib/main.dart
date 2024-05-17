@@ -5,13 +5,14 @@ import 'package:techbot/firebase_options.dart';
 import 'package:techbot/src/config/theme/theme.dart';
 import 'package:techbot/src/core/backend/task_backend/task_repository.dart';
 import 'package:techbot/src/featuers/intropage/view/intropage.dart';
+
 import 'src/core/backend/authentication/authentication.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
       .then((value) => Get.put(AuthenticationRepository()));
-Get.put(TaskRepository());
+  Get.put(TaskRepository());
   runApp(const MyApp());
 }
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return Getpp(
       debugShowCheckedModeBanner: false,
       title: 'TechBot',
       theme: ThemeData(
